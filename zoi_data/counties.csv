@@ -1,0 +1,504 @@
+id,name,type,country,code,parent,uncode,easting,northing,population,statsregion
+1,Derry,district,Northern Ireland,95A,514,DRY,80327,578715,101600,Northern Ireland
+2,Limavady,district,Northern Ireland,95B,514,LMV,80327,578715,NULL,Northern Ireland
+3,Coleraine,district,Northern Ireland,95C,514,CLR,102241,586502,NULL,Northern Ireland
+4,Ballymoney,district,Northern Ireland,95D,515,BLY,117595,576201,NULL,Northern Ireland
+5,Moyle,district,Northern Ireland,95E,515,MYL,134677,593747,NULL,Northern Ireland
+6,Larne,district,Northern Ireland,95F,515,LRN,153857,555468,NULL,Northern Ireland
+7,Ballymena,district,Northern Ireland,95G,515,BLA,127118,557012,NULL,Northern Ireland
+8,Magherafelt,district,Northern Ireland,95H,514,MFT,99766,549455,NULL,Northern Ireland
+9,Cookstown,district,Northern Ireland,95I,489,CKT,99149,540193,NULL,Northern Ireland
+10,Strabane,district,Northern Ireland,95J,489,STB,57621,561775,NULL,Northern Ireland
+11,Omagh,district,Northern Ireland,95K,489,OMH,60882,533593,NULL,Northern Ireland
+12,Fermanagh,district,Northern Ireland,95L,513,FER,42574,507057,NULL,Northern Ireland
+13,Dungannon,district,Northern Ireland,95M,489,DGN,87137,522399,NULL,Northern Ireland
+14,Craigavon,district,Northern Ireland,95N,517,CGV,119480,520288,NULL,Northern Ireland
+15,Armagh,district,Northern Ireland,95O,517,ARM,107512,502438,NULL,Northern Ireland
+16,Newry and Mourne,district,Northern Ireland,95P,516,NYM,122635,482906,NULL,Northern Ireland
+17,Banbridge,district,Northern Ireland,95Q,516,BNB,129166,501108,NULL,Northern Ireland
+18,Down,district,Northern Ireland,95R,516,DOW,161650,499301,NULL,Northern Ireland
+19,Lisburn,district,Northern Ireland,95S,516,LSB,135655,519319,105100,Northern Ireland
+20,Antrim,district,Northern Ireland,95T,515,ANT,122920,575867,NULL,Northern Ireland
+21,Newtownabbey,district,Northern Ireland,95U,515,NTA,147473,537234,NULL,Northern Ireland
+22,Carrickfergus,district,Northern Ireland,95V,515,CKF,153350,546203,NULL,Northern Ireland
+23,North Down,district,Northern Ireland,95W,516,NDN,163584,536363,NULL,Northern Ireland
+24,Ards,district,Northern Ireland,95X,516,ARD,168009,517554,NULL,Northern Ireland
+25,Castlereagh,district,Northern Ireland,95Y,516,CSR,146439,518705,NULL,Northern Ireland
+26,Belfast,district,Northern Ireland,95Z,516,BFS,144803,528087,297100,Northern Ireland
+27,Isle of Anglesey,ua,Wales,00NA,NULL,AGY,244342,375125,NULL,Wales
+28,Gwynedd,ua,Wales,00NC,NULL,GWN,278892,333312,NULL,Wales
+29,Conwy,ua,Wales,00NE,NULL,CWY,NULL,NULL,NULL,Wales
+30,Denbighshire,ua,Wales,00NG,NULL,DEN,299541,355093,NULL,Wales
+31,Flintshire,ua,Wales,00NJ,NULL,FLN,322166,373219,NULL,Wales
+32,Wrexham,ua,Wales,00NL,NULL,WRX,NULL,NULL,117415,Wales
+33,Powys,ua,Wales,00NN,NULL,POW,303009,247478,NULL,Wales
+34,Ceredigion,ua,Wales,00NQ,NULL,CGN,263485,263241,NULL,Wales
+35,Pembrokeshire,ua,Wales,00NS,NULL,PEM,199065,219037,NULL,Wales
+36,Carmarthenshire,ua,Wales,00NU,NULL,CMN,250728,217237,NULL,Wales
+37,Swansea,ua,Wales,00NX,NULL,SWA,NULL,NULL,188822,Wales
+38,Neath Port Talbot,ua,Wales,00NZ,NULL,NTL,NULL,NULL,NULL,Wales
+39,Bridgend,ua,Wales,00PB,NULL,BGE,NULL,NULL,NULL,Wales
+40,The Vale Of Glamorgan,ua,Wales,00PD,NULL,VGL,NULL,NULL,114572,Wales
+41,"Rhondda, Cynon, Taff",ua,Wales,00PF,NULL,RCT,NULL,NULL,NULL,Wales
+42,Merthyr Tydfil,ua,Wales,00PH,NULL,MTY,NULL,NULL,NULL,Wales
+43,Caerphilly,ua,Wales,00PK,NULL,CAY,NULL,NULL,NULL,Wales
+44,Blaenau Gwent,ua,Wales,00PL,NULL,BGW,NULL,NULL,NULL,Wales
+45,Torfaen,ua,Wales,00PM,NULL,TOF,NULL,NULL,NULL,Wales
+46,Monmouthshire,ua,Wales,00PP,NULL,MON,330848,196960,NULL,Wales
+47,Newport,ua,Wales,00PR,NULL,NWP,NULL,NULL,137406,Wales
+48,Cardiff,ua,Wales,00PT,NULL,CRF,NULL,NULL,300038,Wales
+49,Aberdeen City,ua,Scotland,00QA,NULL,ABE,389921,808415,219090,Scotland
+50,Aberdeenshire,ua,Scotland,00QB,NULL,ABD,369833,817789,NULL,Scotland
+51,Angus,ua,Scotland,00QC,NULL,ANS,338987,771743,NULL,Scotland
+52,Argyll and Bute,ua,Scotland,00QD,NULL,AGB,197000,680000,NULL,Scotland
+53,Clackmannanshire,ua,Scotland,00QF,NULL,CLK,291343,698486,NULL,Scotland
+54,Dumfries and Galloway,ua,Scotland,00QH,NULL,DGY,282985,578085,NULL,Scotland
+55,Dundee City,ua,Scotland,00QJ,NULL,DND,343526,730868,167820,Scotland
+56,East Ayrshire,ua,Scotland,00QK,NULL,EAY,257892,625214,NULL,Scotland
+57,East Dunbartonshire,ua,Scotland,00QL,NULL,EDU,262580,673322,NULL,Scotland
+58,East Lothian,ua,Scotland,00QM,NULL,ELN,353229,678809,NULL,Scotland
+59,East Renfrewshire,ua,Scotland,00QN,NULL,ERW,253566,653199,NULL,Scotland
+60,Edinburgh,ua,Scotland,00QP,NULL,EDH,316000,671000,443600,Scotland
+61,Eilean Siar,ua,Scotland,00RJ,NULL,ELS,91978,875806,NULL,Scotland
+62,Falkirk,ua,Scotland,00QQ,NULL,FAL,290873,679937,142530,Scotland
+63,Fife,ua,Scotland,00QR,NULL,FIF,327716,706990,NULL,Scotland
+64,Glasgow City,ua,Scotland,00QS,NULL,GLG,259216,666006,680000,Scotland
+65,Highland,ua,Scotland,00QT,NULL,HLD,220259,849477,NULL,Scotland
+66,Inverclyde,ua,Scotland,00QU,NULL,IVC,229202,672660,NULL,Scotland
+67,Midlothian,ua,Scotland,00QW,NULL,MLN,316675,670088,NULL,Scotland
+68,Moray,ua,Scotland,00QX,NULL,MRY,326095,846178,NULL,Scotland
+69,North Ayrshire,ua,Scotland,00QY,NULL,NAY,211338,645541,NULL,Scotland
+70,North Lanarkshire,ua,Scotland,00QZ,NULL,NLK,280070,665378,NULL,Scotland
+71,Orkney Islands,ua,Scotland,00RA,NULL,ORK,342554,1012927,NULL,Scotland
+72,Perth and Kinross,ua,Scotland,00RB,NULL,PKN,292286,735573,129180,Scotland
+73,Renfrewshire,ua,Scotland,00RC,NULL,RFW,243443,662831,201690,Scotland
+74,The Scottish Borders,ua,Scotland,00QE,NULL,SCB,347474,632502,NULL,Scotland
+75,Shetland Islands,ua,Scotland,00RD,NULL,ZET,436806,1161153,NULL,Scotland
+76,South Ayrshire,ua,Scotland,00RE,NULL,SAY,230517,598337,NULL,Scotland
+77,South Lanarkshire,ua,Scotland,00RF,NULL,SLK,284450,633712,NULL,Scotland
+78,Stirling,ua,Scotland,00RG,NULL,STG,260606,708654,NULL,Scotland
+79,West Dunbartonshire,ua,Scotland,00QG,NULL,WDU,241900,677743,NULL,Scotland
+80,West Lothian,ua,Scotland,00RH,NULL,WLN,300054,672289,148190,Scotland
+81,Hartlepool,ua,England,00EB,NULL,HPL,448368,530447,NULL,North East
+82,Middlesbrough,ua,England,00EC,NULL,MDB,451761,515648,146930,North East
+83,Redcar and Cleveland,ua,England,00EE,NULL,RCC,464675,517668,NULL,North East
+84,Stockton-on-Tees,ua,England,00EF,NULL,STT,443117,517412,178161,North East
+85,Darlington,ua,England,00EH,NULL,DAL,430194,515454,100612,North East
+86,Halton,ua,England,00ET,NULL,HAL,355522,372792,123727,North West
+87,Warrington,ua,England,00EU,NULL,WRT,361234,391283,186749,North West
+88,Blackburn with Darwen,ua,England,00EX,NULL,BBD,369169,419036,140147,North West
+89,Blackpool,ua,England,00EY,NULL,BPL,332002,437971,153971,North West
+90,Kingston upon Hull,ua,England,00FA,NULL,KHL,NULL,NULL,269144,Yorkshire And The Humber
+91,East Riding of Yorkshire,ua,England,00FB,NULL,ERY,498507,447789,NULL,Yorkshire And The Humber
+92,North East Lincolnshire,ua,England,00FC,152,NEL,527018,405811,NULL,Yorkshire And The Humber
+93,North Lincolnshire,ua,England,00FD,152,NLN,499290,410710,NULL,Yorkshire And The Humber
+94,York,ua,England,00FF,NULL,YOR,460128,452702,104102,Yorkshire And The Humber
+95,Derby,ua,England,00FK,140,DER,427852,363396,230473,East Midlands
+96,Leicester,ua,England,00FN,151,LCE,467618,308169,293387,East Midlands
+97,Rutland,ua,England,00FP,NULL,RUT,490157,308534,NULL,East Midlands
+98,Nottingham,ua,England,00FY,157,NGM,NULL,NULL,282440,East Midlands
+99,Herefordshire,ua,England,00GA,NULL,HEF,NULL,NULL,NULL,West Midlands
+100,Telford and Wrekin,ua,England,00GF,159,TFW,366254,317086,143430,West Midlands
+101,Stoke-on-Trent,ua,England,00GL,161,STE,NULL,NULL,254197,West Midlands
+102,Bath and North East Somerset,ua,England,00HA,NULL,BAS,365170,159534,NULL,South West
+103,Bristol,ua,England,00HB,NULL,BST,358310,172560,399243,South West
+104,North Somerset,ua,England,00HC,NULL,NSM,341951,159745,NULL,South West
+105,South Gloucestershire,ua,England,00HD,NULL,SGC,371080,178031,NULL,South West
+106,Plymouth,ua,England,00HG,NULL,PLY,NULL,NULL,255815,South West
+107,Torbay,ua,England,00HH,NULL,TOB,291076,58613,122990,South West
+108,Bournemouth,ua,England,00HN,NULL,BMH,409411,90854,160139,South West
+109,Poole,ua,England,00HP,NULL,POL,402352,92699,138100,South West
+110,Swindon,ua,England,00HX,NULL,SWD,417319,187246,NULL,South West
+111,Peterborough,ua,England,00JA,NULL,PTE,NULL,NULL,158654,East
+112,Luton,ua,England,00KA,NULL,LUT,510152,219935,180848,East
+113,Southend-on-Sea,ua,England,00KF,NULL,SOS,587244,185111,169948,East
+114,Thurrock,ua,England,00KG,NULL,THR,563153,178710,131368,East
+115,Medway,ua,England,00LC,NULL,MDW,573819,171647,NULL,South East
+116,Bracknell Forest,ua,England,00MA,NULL,BRC,486914,169423,104635,South East
+117,West Berkshire,ua,England,00MB,NULL,WBK,452149,168949,NULL,South East
+118,Reading,ua,England,00MC,NULL,RDG,471797,172895,138503,South East
+119,Slough,ua,England,00MD,NULL,SLG,499479,178923,104945,South East
+120,Windsor and Maidenhead,ua,England,00ME,NULL,WNM,490226,178750,137781,South East
+121,Wokingham,ua,England,00MF,NULL,WOK,475325,169239,141735,South East
+122,Milton Keynes,ua,England,00MG,NULL,MIK,485643,243558,188447,South East
+123,Brighton and Hove,ua,England,00ML,NULL,BNH,531434,105478,154942,South East
+124,Portsmouth,ua,England,00MR,NULL,POR,NULL,NULL,189270,South East
+125,Southampton,ua,England,00MS,NULL,STH,NULL,NULL,211718,South East
+126,Isle of Wight,ua,England,00MW,NULL,IOW,452997,85558,NULL,South East
+127,Greater London,county,England,0,NULL,GTL,527239,179542,6962319,London
+128,Greater Manchester,county,England,0,NULL,GTM,384505,394857,NULL,North West
+129,Merseyside,county,England,0,NULL,MSY,327979,389817,NULL,North West
+130,South Yorkshire,county,England,0,NULL,SYK,449802,395094,NULL,Yorkshire And The Humber
+131,Tyne and Wear,county,England,0,NULL,TWR,427774,558094,NULL,North East
+132,West Midlands,county,England,0,NULL,WMD,402262,289163,NULL,West Midlands
+133,West Yorkshire,county,England,0,NULL,WYK,427505,422723,NULL,Yorkshire And The Humber
+134,Bedfordshire,county,England,9,NULL,BDF,502963,234615,NULL,East
+135,Buckinghamshire,county,England,11,NULL,BKM,486280,206490,NULL,South East
+136,Cambridgeshire,county,England,12,NULL,CAM,541935,272668,NULL,East
+137,Cheshire,county,England,13,NULL,CHS,361007,363474,NULL,North West
+138,Cornwall and Isles of Scilly,county,England,15,NULL,CON,NULL,NULL,NULL,South West
+139,Cumbria,county,England,16,NULL,CMA,335430,525088,NULL,North West
+140,Derbyshire,county,England,17,NULL,DBY,427906,354123,NULL,East Midlands
+141,Devon,county,England,18,NULL,DVV,276560,96012,NULL,South West
+142,Dorset,county,England,19,NULL,DOR,376486,94605,NULL,South West
+143,Durham,county,England,20,NULL,DUR,416122,530221,NULL,North East
+144,East Sussex,county,England,21,NULL,ESX,523000,114545,NULL,South East
+145,Essex,county,England,22,NULL,ESS,572551,208708,NULL,East
+146,Gloucestershire,county,England,23,NULL,GLS,382775,215044,NULL,South West
+147,Hampshire,county,England,24,NULL,HAM,452527,131880,NULL,South East
+148,Hertfordshire,county,England,26,NULL,HRT,515039,207065,NULL,East
+149,Kent,county,England,29,NULL,KEN,586415,144263,NULL,South East
+150,Lancashire,county,England,30,NULL,LAN,361690,446908,NULL,North West
+151,Leicestershire,county,England,31,NULL,LEC,456348,308029,NULL,East Midlands
+152,Lincolnshire,county,England,32,NULL,LIN,511404,364616,NULL,East Midlands
+153,Norfolk,county,England,33,NULL,NFK,602834,311927,NULL,East
+154,Northamptonshire,county,England,34,NULL,NTH,473809,271174,NULL,East Midlands
+155,Northumberland,county,England,35,NULL,NBL,400000,595095,NULL,North East
+156,North Yorkshire,county,England,36,NULL,NYK,438034,480283,NULL,Yorkshire And The Humber
+157,Nottinghamshire,county,England,37,NULL,NTT,466973,354509,NULL,East Midlands
+158,Oxfordshire,county,England,38,NULL,OXF,457520,206079,NULL,South East
+159,Shropshire,county,England,39,NULL,SHR,360555,307863,NULL,West Midlands
+160,Somerset,county,England,40,NULL,SOM,329963,132091,NULL,South West
+161,Staffordshire,county,England,41,NULL,STS,400000,326234,NULL,West Midlands
+162,Suffolk,county,England,42,NULL,SFK,604759,265597,NULL,East
+163,Surrey,county,England,43,NULL,SRY,516305,151468,NULL,South East
+164,Warwickshire,county,England,44,NULL,WAR,434066,270739,NULL,West Midlands
+165,West Sussex,county,England,45,NULL,WSX,505430,114159,NULL,South East
+166,Wiltshire,county,England,46,NULL,WIL,405804,159415,NULL,South West
+167,Worcestershire,county,England,47,NULL,WOR,386332,255815,NULL,West Midlands
+168,City Of London,district,England,00AA,127,LND,529552,179601,NULL,London
+169,Barking and Dagenham,district,England,00AB,127,BDG,546741,185632,155018,London
+170,Barnet,district,England,00AC,127,BNE,521190,190520,308300,London
+171,Bexley,district,England,00AD,127,BEX,548328,170841,220432,London
+172,Brent,district,England,00AE,127,BEN,520211,183080,244467,London
+173,Bromley,district,England,00AF,127,BRY,545115,161476,293019,London
+174,Camden,district,England,00AG,127,CMD,527146,183249,182448,London
+175,Croydon,district,England,00AH,127,CRY,533507,161159,326736,London
+176,Ealing,district,England,00AJ,127,EAL,515673,179266,289793,London
+177,Enfield,district,England,00AK,127,ENF,532731,190810,259773,London
+178,Greenwich,district,England,00AL,127,GRE,542431,174382,212332,London
+179,Hackney,district,England,00AM,127,HCK,532925,183397,192492,London
+180,Hammersmith and Fulham,district,England,00AN,127,HMF,521456,179401,156597,London
+181,Haringey,district,England,00AP,127,HRY,530518,187043,212332,London
+182,Harrow,district,England,00AQ,127,HRW,515504,186679,210308,London
+183,Havering,district,England,00AR,127,HAV,553673,185838,231706,London
+184,Hillingdon,district,England,00AS,127,HIL,507576,179088,243387,London
+185,Hounslow,district,England,00AT,127,HNS,515799,173706,202790,London
+186,Islington,district,England,00AU,127,ISL,529458,183307,175203,London
+187,Kensington and Chelsea,district,England,00AW,127,KEC,NULL,NULL,150237,London
+188,Kingston upon Thames,district,England,00AX,127,KTT,NULL,NULL,138522,London
+189,Lambeth,district,England,00AY,127,LBH,529789,170335,260763,London
+190,Lewisham,district,England,00AZ,127,LEW,536741,170517,242472,London
+191,Merton,district,England,00BA,127,MRT,527564,166570,177259,London
+192,Newham,district,England,00BB,127,NWM,542119,185501,226850,London
+193,Redbridge,district,England,00BC,127,RDB,544377,187419,225102,London
+194,Richmond upon Thames,district,England,00BD,127,RIC,515884,170000,172035,London
+195,Southwark,district,England,00BE,127,SWK,533168,174131,228767,London
+196,Sutton,district,England,00BF,127,STN,527703,161011,173376,London
+197,Tower Hamlets,district,England,00BG,127,TWH,536442,181639,170549,London
+198,Waltham Forest,district,England,00BH,127,WFT,536293,187195,221790,London
+199,Wandsworth,district,England,00BJ,127,WND,525154,170219,266721,London
+200,Westminster,district,England,00BK,127,WSM,527239,179542,190743,London
+201,Bolton,district,England,00BL,128,BOL,366902,409781,265175,North West
+202,Bury,district,England,00BM,128,BUR,377934,409716,182232,North West
+203,Manchester,district,England,00BN,128,MAN,383385,391153,431061,North West
+204,Oldham,district,England,00BP,128,OLD,394479,405960,220402,North West
+205,Rochdale,district,England,00BQ,128,RCH,388967,409677,207147,North West
+206,Salford,district,England,00BR,128,SLF,377891,400446,230693,North West
+207,Stockport,district,England,00BS,128,SKP,388923,391137,291373,North West
+208,Tameside,district,England,00BT,128,TAM,394472,400397,221793,North West
+209,Trafford,district,England,00BU,128,TRF,377848,391176,218110,North West
+210,Wigan,district,England,00BW,128,WGN,361309,400553,310012,North West
+211,Knowsley,district,England,00BX,129,KWL,344620,391448,153953,North West
+212,Liverpool,district,England,00BY,129,LIV,339082,391515,474001,North West
+213,St. Helens,district,England,00BZ,129,SHN,350158,391386,180969,North West
+214,Sefton,district,England,00CA,129,SFT,333674,400859,292363,North West
+215,Wirral,district,England,00CB,129,WRL,327866,382401,333117,North West
+216,Barnsley,district,England,00CC,130,BNS,433136,404219,226526,Yorkshire And The Humber
+217,Doncaster,district,England,00CE,130,DNC,460798,400785,292501,Yorkshire And The Humber
+218,Rotherham,district,England,00CF,130,ROT,449841,391386,256277,Yorkshire And The Humber
+219,Sheffield,district,England,00CG,130,SHF,433227,391241,530104,Yorkshire And The Humber
+220,Gateshead,district,England,00CH,131,GAT,420296,558054,202444,North East
+221,Newcastle upon Tyne,district,England,00CJ,131,NET,421320,567328,283556,North East
+222,North Tyneside,district,England,00CK,131,NTY,431967,569250,194082,North East
+223,South Tyneside,district,England,00CL,131,STY,437357,561869,156665,North East
+224,Sunderland,district,England,00CM,131,SND,437419,554452,297226,North East
+225,Birmingham,district,England,00CN,132,BIR,409050,289171,1008381,West Midlands
+226,Coventry,district,England,00CQ,132,COV,434002,280011,302514,West Midlands
+227,Dudley,district,England,00CR,132,DUD,392081,289169,312235,West Midlands
+228,Sandwell,district,England,00CS,132,SAW,400000,289162,293742,West Midlands
+229,Solihull,district,England,00CT,132,SOL,417001,279923,202021,West Midlands
+230,Walsall,district,England,00CU,132,WLL,400000,298431,263853,West Midlands
+231,Wolverhampton,district,England,00CW,132,WLV,392096,298437,245059,West Midlands
+232,Bradford,district,England,00CX,133,BRD,410967,437489,481747,Yorkshire And The Humber
+233,Calderdale,district,England,00CY,133,CLD,400000,422643,193612,Yorkshire And The Humber
+234,Kirklees,district,England,00CZ,133,KIR,416548,409693,386904,Yorkshire And The Humber
+235,Leeds,district,England,00DA,133,LDS,432967,428321,724448,Yorkshire And The Humber
+236,Wakefield,district,England,00DB,133,WKF,438538,419093,317301,Yorkshire And The Humber
+244,Mid Bedfordshire,district,England,09UC,134,NULL,NULL,NULL,114853,East
+245,Bedford,district,England,09UD,134,NULL,502963,234615,137001,East
+246,South Bedfordshire,district,England,09UE,134,NULL,498569,225260,110389,East
+247,Aylesbury Vale,district,England,11UB,135,NULL,482676,215695,152033,South East
+248,Chiltern,district,England,11UC,135,NULL,NULL,NULL,NULL,South East
+249,South Bucks,district,England,11UE,135,NULL,NULL,NULL,NULL,South East
+250,Wycombe,district,England,11UF,135,NULL,476206,187786,162588,South East
+251,Cambridge,district,England,12UB,136,NULL,541935,272668,113009,East
+252,East Cambridgeshire,district,England,12UC,136,NULL,556753,271266,NULL,East
+253,Fenland,district,England,12UD,136,NULL,541294,294905,NULL,East
+254,Huntingdonshire,district,England,12UE,136,NULL,519003,281338,149869,East
+255,South Cambridgeshire,district,England,12UG,136,NULL,NULL,NULL,123563,East
+256,Chester,district,England,13UB,137,NULL,361007,363474,120622,North West
+257,Congleton,district,England,13UC,137,NULL,NULL,NULL,NULL,North West
+258,Crewe and Nantwich,district,England,13UD,137,NULL,NULL,NULL,111422,North West
+259,Ellesmere Port & Neston,district,England,13UE,137,NULL,335000,376700,NULL,North West
+260,Macclesfield,district,England,13UG,137,NULL,NULL,NULL,151503,North West
+261,Vale Royal,district,England,13UH,137,NULL,NULL,NULL,114695,North West
+262,Caradon,district,England,15UB,138,NULL,NULL,NULL,NULL,South West
+263,Carrick,district,England,15UC,138,NULL,NULL,NULL,114360,South West
+264,Kerrier,district,England,15UD,138,NULL,NULL,NULL,NULL,South West
+265,North Cornwall,district,England,15UE,138,NULL,NULL,NULL,NULL,South West
+266,Penwith,district,England,15UF,138,NULL,NULL,NULL,NULL,South West
+267,Restormel,district,England,15UG,138,NULL,NULL,NULL,NULL,South West
+268,Isles of Scilly,district,England,15UH,138,IOS,NULL,NULL,NULL,South West
+269,Allerdale,district,England,16UB,139,NULL,NULL,NULL,NULL,North West
+270,Barrow-in-Furness,district,England,16UC,139,NULL,319391,469703,NULL,North West
+271,Carlisle,district,England,16UD,139,NULL,NULL,NULL,103335,North West
+272,Copeland,district,England,16UE,139,NULL,NULL,NULL,NULL,North West
+273,Eden,district,England,16UF,139,NULL,NULL,NULL,NULL,North West
+274,South Lakeland,district,England,16UG,139,NULL,NULL,NULL,100263,North West
+275,Amber Valley,district,England,17UB,140,NULL,NULL,NULL,114451,East Midlands
+276,Bolsover,district,England,17UC,140,NULL,444511,369088,NULL,East Midlands
+277,Chesterfield,district,England,17UD,140,NULL,NULL,NULL,101104,East Midlands
+278,Derbyshire Dales,district,England,17UF,140,NULL,NULL,NULL,NULL,East Midlands
+279,Erewash,district,England,17UG,140,NULL,NULL,NULL,107142,East Midlands
+280,High Peak,district,England,17UH,140,NULL,NULL,NULL,NULL,East Midlands
+281,North East Derbyshire,district,England,17UJ,140,NULL,433396,367139,NULL,East Midlands
+282,South Derbyshire,district,England,17UK,140,NULL,NULL,NULL,NULL,East Midlands
+283,East Devon,district,England,18UB,141,NULL,NULL,NULL,122839,South West
+284,Exeter,district,England,18UC,141,NULL,NULL,NULL,104537,South West
+285,Mid Devon,district,England,18UD,141,NULL,NULL,NULL,NULL,South West
+286,North Devon,district,England,18UE,141,NULL,NULL,NULL,NULL,South West
+287,South Hams,district,England,18UG,141,NULL,269720,57243,NULL,South West
+288,Teignbridge,district,England,18UH,141,NULL,NULL,NULL,114088,South West
+289,Torridge,district,England,18UK,141,NULL,231438,119532,NULL,South West
+290,West Devon,district,England,18UL,141,NULL,NULL,NULL,NULL,South West
+291,Christchurch,district,England,19UC,142,NULL,NULL,NULL,NULL,South West
+292,East Dorset,district,England,19UD,142,NULL,NULL,NULL,NULL,South West
+293,North Dorset,district,England,19UE,142,NULL,NULL,NULL,NULL,South West
+294,Purbeck,district,England,19UG,142,NULL,NULL,NULL,NULL,South West
+295,West Dorset,district,England,19UH,142,NULL,NULL,NULL,NULL,South West
+296,Weymouth and Portland,district,England,19UJ,142,NULL,NULL,NULL,NULL,South West
+297,Chester-le-Street,district,England,20UB,143,NULL,NULL,NULL,NULL,North East
+298,Derwentside,district,England,20UD,143,NULL,NULL,NULL,NULL,North East
+300,Easington,district,England,20UF,143,NULL,NULL,NULL,NULL,North East
+301,Sedgefield,district,England,20UG,143,NULL,432245,530307,NULL,North East
+302,Teesdale,district,England,20UH,143,NULL,NULL,NULL,NULL,North East
+303,Wear Valley,district,England,20UJ,143,NULL,400000,539460,NULL,North East
+304,Eastbourne,district,England,21UC,144,NULL,NULL,NULL,NULL,South East
+305,Hastings,district,England,21UD,144,NULL,NULL,NULL,NULL,South East
+306,Lewes,district,England,21UF,144,NULL,NULL,NULL,NULL,South East
+307,Rother,district,England,21UG,144,NULL,586117,120133,NULL,South East
+308,Wealden,district,England,21UH,144,NULL,552284,115323,134936,South East
+309,Basildon,district,England,22UB,145,NULL,NULL,NULL,162114,East
+310,Braintree,district,England,22UC,145,NULL,NULL,NULL,123648,East
+311,Brentwood,district,England,22UD,145,NULL,NULL,NULL,NULL,East
+312,Castle Point,district,England,22UE,145,NULL,NULL,NULL,NULL,East
+313,Chelmsford,district,England,22UF,145,NULL,NULL,NULL,155800,East
+314,Colchester,district,England,22UG,145,NULL,NULL,NULL,149621,East
+315,Epping Forest,district,England,22UH,145,NULL,NULL,NULL,118943,East
+316,Harlow,district,England,22UJ,145,NULL,NULL,NULL,NULL,East
+317,Maldon,district,England,22UK,145,NULL,NULL,NULL,NULL,East
+318,Rochford,district,England,22UL,145,NULL,581399,186754,NULL,East
+319,Tendring,district,England,22UN,145,NULL,NULL,NULL,130915,East
+320,Uttlesford,district,England,22UQ,145,NULL,NULL,NULL,NULL,East
+321,Cheltenham,district,England,23UB,146,NULL,NULL,NULL,106782,South West
+322,Cotswold,district,England,23UC,146,NULL,NULL,NULL,NULL,South West
+323,Forest of Dean,district,England,23UD,146,NULL,NULL,NULL,NULL,South West
+324,Gloucester,district,England,23UE,146,NULL,388516,215031,104735,South West
+325,Stroud,district,England,23UF,146,NULL,386194,205769,106271,South West
+326,Tewkesbury,district,England,23UG,146,NULL,NULL,NULL,NULL,South West
+327,Basingstoke and Deane,district,England,24UB,147,NULL,NULL,NULL,147193,South East
+328,East Hampshire,district,England,24UC,147,NULL,NULL,NULL,108209,South East
+329,Eastleigh,district,England,24UD,147,NULL,NULL,NULL,110780,South East
+330,Fareham,district,England,24UE,147,NULL,NULL,NULL,101764,South East
+331,Gosport,district,England,24UF,147,NULL,NULL,NULL,NULL,South East
+332,Hart,district,England,24UG,147,NULL,NULL,NULL,NULL,South East
+333,Havant,district,England,24UH,147,NULL,NULL,NULL,119430,South East
+334,New Forest,district,England,24UJ,147,NULL,428165,103890,166354,South East
+335,Rushmoor,district,England,24UL,147,NULL,NULL,NULL,NULL,South East
+336,Test Valley,district,England,24UN,147,NULL,NULL,NULL,105318,South East
+337,Winchester,district,England,24UP,147,NULL,NULL,NULL,101848,South East
+338,Broxbourne,district,England,26UB,148,NULL,NULL,NULL,NULL,East
+339,Dacorum,district,England,26UC,148,NULL,NULL,NULL,134231,East
+340,East Hertfordshire,district,England,26UD,148,NULL,NULL,NULL,121624,East
+341,Hertsmere,district,England,26UE,148,NULL,NULL,NULL,NULL,East
+342,North Hertfordshire,district,England,26UF,148,NULL,NULL,NULL,114303,East
+343,St Albans,district,England,26UG,148,NULL,NULL,NULL,128739,East
+344,Stevenage,district,England,26UH,148,NULL,NULL,NULL,NULL,East
+345,Three Rivers,district,England,26UJ,148,NULL,498143,188163,NULL,East
+346,Watford,district,England,26UK,148,NULL,NULL,NULL,NULL,East
+347,Welwyn Hatfield,district,England,26UL,148,NULL,523091,207255,NULL,East
+348,Ashford,district,England,29UB,149,NULL,NULL,NULL,NULL,South East
+349,Canterbury,district,England,29UC,149,NULL,NULL,NULL,133859,South East
+350,Dartford,district,England,29UD,149,NULL,NULL,NULL,NULL,South East
+351,Dover,district,England,29UE,149,NULL,626101,144000,106938,South East
+352,Gravesham,district,England,29UG,149,NULL,565889,165822,NULL,South East
+353,Maidstone,district,England,29UH,149,NULL,NULL,NULL,138456,South East
+354,Sevenoaks,district,England,29UK,149,NULL,NULL,NULL,109919,South East
+355,Shepway,district,England,29UL,149,NULL,NULL,NULL,NULL,South East
+356,Swale,district,England,29UM,149,NULL,NULL,NULL,117195,South East
+357,Thanet,district,England,29UN,149,NULL,628602,166387,125301,South East
+358,Tonbridge and Malling,district,England,29UP,149,NULL,NULL,NULL,102765,South East
+359,Tunbridge Wells,district,England,29UQ,149,NULL,NULL,NULL,102727,South East
+360,Burnley,district,England,30UD,150,NULL,NULL,NULL,NULL,North West
+361,Chorley,district,England,30UE,150,NULL,NULL,NULL,NULL,North West
+362,Fylde,district,England,30UF,150,NULL,NULL,NULL,NULL,North West
+363,Hyndburn,district,England,30UG,150,NULL,NULL,NULL,NULL,North West
+364,Lancaster,district,England,30UH,150,NULL,367097,437592,134991,North West
+365,Pendle,district,England,30UJ,150,NULL,NULL,NULL,NULL,North West
+366,Preston,district,England,30UK,150,NULL,NULL,NULL,133127,North West
+367,Ribble Valley,district,England,30UL,150,NULL,NULL,NULL,NULL,North West
+368,Rossendale,district,England,30UM,150,NULL,NULL,NULL,NULL,North West
+369,South Ribble,district,England,30UN,150,NULL,351609,424750,103592,North West
+370,West Lancashire,district,England,30UP,150,NULL,347127,417378,110226,North West
+371,Wyre,district,England,30UQ,150,NULL,336515,447183,103927,North West
+372,Blaby,district,England,31UB,151,NULL,456520,293192,NULL,East Midlands
+373,Charnwood,district,England,31UC,151,NULL,NULL,NULL,153144,East Midlands
+374,Harborough,district,England,31UD,151,NULL,NULL,NULL,NULL,East Midlands
+375,Hinckley and Bosworth,district,England,31UE,151,NULL,NULL,NULL,NULL,East Midlands
+376,Melton,district,England,31UG,151,NULL,NULL,NULL,NULL,East Midlands
+377,North West Leicestershire,district,England,31UH,151,NULL,NULL,NULL,NULL,East Midlands
+378,Oadby and Wigston,district,England,31UJ,151,NULL,462149,295118,NULL,East Midlands
+379,Boston,district,England,32UB,152,NULL,NULL,NULL,NULL,East Midlands
+380,East Lindsey,district,England,32UC,152,NULL,NULL,NULL,121431,East Midlands
+381,Lincoln,district,England,32UD,152,NULL,516974,364745,NULL,East Midlands
+382,North Kesteven,district,England,32UE,152,NULL,491458,358629,NULL,East Midlands
+383,South Holland,district,England,32UF,152,NULL,NULL,NULL,NULL,East Midlands
+384,South Kesteven,district,England,32UG,152,NULL,NULL,NULL,115229,East Midlands
+385,West Lindsey,district,England,32UH,152,NULL,NULL,NULL,NULL,East Midlands
+386,Breckland,district,England,33UB,153,NULL,NULL,NULL,112171,East
+387,Broadland,district,England,33UC,153,NULL,636629,313453,110069,East
+388,Great Yarmouth,district,England,33UD,153,NULL,NULL,NULL,NULL,East
+389,King's Lynn and West Norfolk,district,England,33UE,153,NULL,NULL,NULL,130958,East
+390,North Norfolk,district,England,33UF,153,NULL,NULL,NULL,NULL,East
+391,Norwich,district,England,33UG,153,NULL,NULL,NULL,127778,East
+392,South Norfolk,district,England,33UH,153,NULL,NULL,NULL,104467,East
+393,Corby,district,England,34UB,154,NULL,NULL,NULL,NULL,East Midlands
+394,Daventry,district,England,34UC,154,NULL,NULL,NULL,NULL,East Midlands
+395,East Northamptonshire,district,England,34UD,154,NULL,NULL,NULL,NULL,East Midlands
+396,Kettering,district,England,34UE,154,NULL,NULL,NULL,NULL,East Midlands
+397,Northampton,district,England,34UF,154,NULL,479636,261998,187608,East Midlands
+398,South Northamptonshire,district,England,34UG,154,NULL,NULL,NULL,NULL,East Midlands
+399,Wellingborough,district,England,34UH,154,NULL,NULL,NULL,NULL,East Midlands
+400,Alnwick,district,England,35UB,155,NULL,418989,613685,NULL,North East
+401,Berwick-upon-Tweed,district,England,35UC,155,NULL,NULL,NULL,NULL,North East
+402,Blyth Valley,district,England,35UD,155,NULL,NULL,NULL,NULL,North East
+403,Castle Morpeth,district,England,35UE,155,NULL,412744,583986,NULL,North East
+404,Tynedale,district,England,35UF,155,NULL,NULL,NULL,NULL,North East
+405,Wansbeck,district,England,35UG,155,NULL,426540,585905,NULL,North East
+406,Craven,district,England,36UB,156,NULL,NULL,NULL,NULL,Yorkshire And The Humber
+407,Hambleton,district,England,36UC,156,NULL,NULL,NULL,NULL,Yorkshire And The Humber
+408,Harrogate,district,England,36UD,156,NULL,NULL,NULL,148412,Yorkshire And The Humber
+409,Richmondshire,district,England,36UE,156,NULL,NULL,NULL,NULL,Yorkshire And The Humber
+410,Ryedale,district,England,36UF,156,NULL,NULL,NULL,NULL,Yorkshire And The Humber
+411,Scarborough,district,England,36UG,156,NULL,NULL,NULL,108654,Yorkshire And The Humber
+412,Selby,district,England,36UH,156,NULL,NULL,NULL,NULL,Yorkshire And The Humber
+413,Ashfield,district,England,37UB,157,NULL,NULL,NULL,109863,East Midlands
+414,Bassetlaw,district,England,37UC,157,NULL,NULL,NULL,105479,East Midlands
+415,Broxtowe,district,England,37UD,157,NULL,NULL,NULL,112170,East Midlands
+416,Gedling,district,England,37UE,157,NULL,NULL,NULL,111659,East Midlands
+417,Mansfield,district,England,37UF,157,NULL,NULL,NULL,102127,East Midlands
+418,Newark and Sherwood,district,England,37UG,157,NULL,NULL,NULL,104149,East Midlands
+419,Rushcliffe,district,England,37UJ,157,NULL,NULL,NULL,102967,East Midlands
+420,Cherwell,district,England,38UB,158,NULL,NULL,NULL,127456,South East
+421,Oxford,district,England,38UC,158,NULL,451673,215284,132758,South East
+422,South Oxfordshire,district,England,38UD,158,NULL,464541,196899,121823,South East
+423,Vale of White Horse,district,England,38UE,158,NULL,440338,196648,113195,South East
+424,West Oxfordshire,district,England,38UF,158,NULL,NULL,NULL,NULL,South East
+425,Bridgnorth,district,England,39UB,159,NULL,NULL,NULL,NULL,West Midlands
+426,North Shropshire,district,England,39UC,159,NULL,351760,330189,NULL,West Midlands
+427,Oswestry,district,England,39UD,159,NULL,NULL,NULL,NULL,West Midlands
+428,Shrewsbury and Atcham,district,England,39UE,159,NULL,NULL,NULL,NULL,West Midlands
+429,South Shropshire,district,England,39UF,159,NULL,342261,285798,NULL,West Midlands
+430,Mendip,district,England,40UB,160,NULL,NULL,NULL,NULL,South West
+431,Sedgemoor,district,England,40UC,160,NULL,NULL,NULL,101443,South West
+432,South Somerset,district,England,40UD,160,NULL,NULL,NULL,148298,South West
+433,Taunton Deane,district,England,40UE,160,NULL,NULL,NULL,NULL,South West
+434,West Somerset,district,England,40UF,160,NULL,NULL,NULL,NULL,South West
+435,Cannock Chase,district,England,41UB,161,NULL,400000,315111,NULL,West Midlands
+436,East Staffordshire,district,England,41UC,161,NULL,405613,326237,NULL,West Midlands
+437,Lichfield,district,England,41UD,161,NULL,NULL,NULL,NULL,West Midlands
+438,Newcastle-under-Lyme,district,England,41UE,161,NULL,NULL,NULL,123137,West Midlands
+439,South Staffordshire,district,England,41UF,161,NULL,NULL,NULL,104379,West Midlands
+440,Stafford,district,England,41UG,161,NULL,400000,326237,122458,West Midlands
+441,Staffordshire Moorlands,district,England,41UH,161,NULL,400000,350337,NULL,West Midlands
+442,Tamworth,district,England,41UK,161,NULL,NULL,NULL,NULL,West Midlands
+443,Babergh,district,England,42UB,162,NULL,NULL,NULL,NULL,East
+444,Forest Heath,district,England,42UC,162,NULL,574859,273723,NULL,East
+445,Ipswich,district,England,42UD,162,NULL,NULL,NULL,114065,East
+446,Mid Suffolk,district,England,42UE,162,NULL,NULL,NULL,NULL,East
+447,St. Edmundsbury,district,England,42UF,162,NULL,NULL,NULL,NULL,East
+448,Suffolk Coastal,district,England,42UG,162,NULL,NULL,NULL,113163,East
+449,Waveney,district,England,42UH,162,NULL,NULL,NULL,107604,East
+450,Elmbridge,district,England,43UB,163,NULL,511410,162484,119717,South East
+451,Epsom and Ewell,district,England,43UC,163,NULL,NULL,NULL,NULL,South East
+452,Guildford,district,England,43UD,163,NULL,NULL,NULL,126162,South East
+453,Mole Valley,district,England,43UE,163,NULL,511895,140246,NULL,South East
+454,Reigate and Banstead,district,England,43UF,163,NULL,526725,153573,118340,South East
+455,Runnymede,district,England,43UG,163,NULL,NULL,NULL,NULL,South East
+456,Spelthorne,district,England,43UH,163,NULL,NULL,NULL,NULL,South East
+457,Surrey Heath,district,England,43UJ,163,NULL,490653,154654,NULL,South East
+458,Tandridge,district,England,43UK,163,NULL,NULL,NULL,NULL,South East
+459,Waverley,district,England,43UL,163,NULL,NULL,NULL,114758,South East
+460,Woking,district,England,43UM,163,NULL,NULL,NULL,NULL,South East
+461,North Warwickshire,district,England,44UB,164,NULL,NULL,NULL,NULL,West Midlands
+462,Nuneaton and Bedworth,district,England,44UC,164,NULL,NULL,NULL,119142,West Midlands
+463,Rugby,district,England,44UD,164,NULL,NULL,NULL,NULL,West Midlands
+464,Stratford-on-Avon,district,England,44UE,164,NULL,NULL,NULL,109462,West Midlands
+465,Warwick,district,England,44UF,164,NULL,428388,270707,119758,West Midlands
+466,Adur,district,England,45UB,165,NULL,517311,106994,NULL,South East
+467,Arun,district,England,45UC,165,NULL,NULL,NULL,134328,South East
+468,Chichester,district,England,45UD,165,NULL,485516,113792,103078,South East
+469,Crawley,district,England,45UE,165,NULL,NULL,NULL,NULL,South East
+470,Horsham,district,England,45UF,165,NULL,NULL,NULL,114324,South East
+471,Mid Sussex,district,England,45UG,165,NULL,NULL,NULL,125109,South East
+472,Worthing,district,England,45UH,165,NULL,NULL,NULL,NULL,South East
+473,Kennet,district,England,46UB,166,NULL,NULL,NULL,NULL,South West
+474,North Wiltshire,district,England,46UC,166,NULL,NULL,NULL,118899,South West
+475,Salisbury,district,England,46UD,166,NULL,NULL,NULL,110015,South West
+476,West Wiltshire,district,England,46UF,166,NULL,NULL,NULL,110035,South West
+477,Bromsgrove,district,England,47UB,167,NULL,NULL,NULL,NULL,West Midlands
+478,Malvern Hills,district,England,47UC,167,NULL,NULL,NULL,NULL,West Midlands
+479,Redditch,district,England,47UD,167,NULL,NULL,NULL,NULL,West Midlands
+480,Worcester,district,England,47UE,167,NULL,388601,252102,NULL,West Midlands
+481,Wychavon,district,England,47UF,167,NULL,NULL,NULL,104577,West Midlands
+482,Wyre Forest,district,England,47UG,167,NULL,375027,272542,NULL,West Midlands
+483,Jersey,district,England,NULL,485,JSY,391504,-75909,NULL,NULL
+484,Guernsey,district,England,NULL,485,GSY,375907,-35102,NULL,NULL
+485,Channel Islands,county,England,NULL,NULL,CHA,NULL,NULL,NULL,NULL
+486,Isle of Man,district,England,NULL,NULL,IOM,237141,486715,NULL,NULL
+489,Tyrone,county,Northern Ireland,NULL,NULL,NULL,76357,523154,NULL,Northern Ireland
+490,Alderney,district,England,NULL,485,NULL,NULL,NULL,NULL,NULL
+491,Sark,district,England,NULL,485,NULL,NULL,NULL,NULL,NULL
+492,Cork,county,Eire,COR,NULL,NULL,NULL,NULL,NULL,Eire
+493,Donegal,county,Eire,DON,NULL,NULL,NULL,NULL,NULL,Eire
+494,Sligo,county,Eire,SLI,NULL,NULL,NULL,NULL,NULL,Eire
+495,Clare,county,Eire,CLA,NULL,NULL,NULL,NULL,NULL,Eire
+496,Mayo,county,Eire,MAY,NULL,NULL,NULL,NULL,NULL,Eire
+497,Meath,county,Eire,MEA,NULL,NULL,NULL,NULL,NULL,Eire
+498,Carlow,county,Eire,CAR,NULL,NULL,NULL,NULL,NULL,Eire
+499,Cavan,county,Eire,CAV,NULL,NULL,NULL,NULL,NULL,Eire
+500,Louth,county,Eire,LOU,NULL,NULL,NULL,NULL,NULL,Eire
+501,Offaly (Kings),county,Eire,OFF,NULL,NULL,NULL,NULL,NULL,Eire
+502,Dublin,county,Eire,DUB,NULL,NULL,NULL,NULL,NULL,Eire
+503,Monaghan,county,Eire,MOG,NULL,NULL,NULL,NULL,NULL,Eire
+504,Leix (Queens),county,Eire,LEX,NULL,NULL,NULL,NULL,NULL,Eire
+505,Westmeath,county,Eire,WEM,NULL,NULL,NULL,NULL,NULL,Eire
+506,Tipperary,county,Eire,TIP,NULL,NULL,NULL,NULL,NULL,Eire
+507,Wexford,county,Eire,NULL,NULL,NULL,NULL,NULL,NULL,Eire
+508,Waterford,county,Eire,WAT,NULL,NULL,NULL,NULL,NULL,Eire
+509,Kerry,county,Eire,KER,NULL,NULL,NULL,NULL,NULL,Eire
+510,Longford,county,Eire,LOG,NULL,NULL,NULL,NULL,NULL,Eire
+511,Limerick,county,Eire,LIM,NULL,NULL,NULL,NULL,NULL,Eire
+512,Wicklow,county,Eire,WIC,NULL,NULL,NULL,NULL,NULL,Eire
+516,County Down,county,Northern Ireland,NULL,NULL,NULL,NULL,NULL,NULL,Northern Ireland
