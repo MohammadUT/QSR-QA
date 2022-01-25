@@ -9,5 +9,5 @@ The script has four main steps:
 4. Answer extraction on top of the results obtained in the previous step for all question types.
 5. Evaluation of the answers.
 
-If you need more information on how it works, feel free to reach out for any inquries.
+Feel free to reach out for any inquries about how this system works.
 mkb6988@gmail.com 
