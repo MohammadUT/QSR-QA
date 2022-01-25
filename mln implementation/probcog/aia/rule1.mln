@@ -1,0 +1,56 @@
+rel={Before,After,Equal,Meets,MeetsInverse,Overlaps,OverlapsInverse,During,DuringInverse,Starts,StartsInverse,Finishes,FinishesInverse}
+lr={L,R,I}
+// {Left, Right, Identical}
+at(timepoint,timepoint,lr!)
+aia(segment,segment,rel!)
+hasStart(segment,timepoint!)
+hasEnd(segment,timepoint!)
+
+at(a,a,I).
+at(a,b,I) => at(b,a,I).
+at(a,b,L) => at(b,a,R).
+at(a,b,R) => at(b,a,L).
+
+at(a,b,r) ^ at(b,c,I) => at(a,c,r).
+at(a,b,r) ^ at(b,c,r) => at(a,c,r).
+at(a,b,L) ^ at(b,c,R) => at(a,c,R) v at(a,c,L) v at(a,c,I).
+
+hasStart(seg1,s1) ^ hasEnd(seg1,e1)  => at(s1,e1,L).
+
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(e1,s2,L) => aia(seg1,seg2,Before).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,Before) => at(e1,s2,L).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(e2,s1,L) => aia(seg1,seg2,After).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,After) => at(e2,s1,L).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(s1,s2,I) ^ at(e1,e2,I) => aia(seg1,seg2,Equal).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,Equal) => at(s1,s2,I).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,Equal) => at(e1,e2,I).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(e1,s2,I) => aia(seg1,seg2,Meets).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,Meets) => at(e1,s2,I).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(e2,s1,I) => aia(seg1,seg2,MeetsInverse).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,MeetsInverse) => at(e2,s1,I).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(s1,e2,L) ^ at(s2,e1,L) ^ at(s1,s2,L) => aia(seg1,seg2,Overlaps).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,Overlaps) => at(s1,e2,L).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,Overlaps) => at(s2,e1,L).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,Overlaps) => at(s1,s2,L).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(s1,e2,L) ^ at(s2,e1,L) ^ at(s1,s2,R) => aia(seg1,seg2,OverlapsInverse).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,OverlapsInverse) => at(s1,e2,L).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,OverlapsInverse) => at(s2,e1,L).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,OverlapsInverse) => at(s1,s2,R).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(s1,s2,R) ^ at(e1,e2,L) => aia(seg1,seg2,During).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,During) => at(s1,s2,R).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,During) => at(e1,e2,L).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(s1,s2,L) ^ at(e1,e2,R) => aia(seg1,seg2,DuringInverse).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,DuringInverse) => at(e1,e2,R).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,DuringInverse) => at(s1,s2,L).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(s1,s2,I) ^ at(e1,e2,L) => aia(seg1,seg2,Starts).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,Starts) => at(s1,s2,I).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,Starts) => at(e1,e2,L).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(s1,s2,I) ^ at(e1,e2,R) => aia(seg1,seg2,StartsInverse).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,StartsInverse) => at(s1,s2,I).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,StartsInverse) => at(e1,e2,R).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(s1,s2,R) ^ at(e1,e2,I) => aia(seg1,seg2,Finishes).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,Finishes) => at(s1,s2,R).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,Finishes) => at(e1,e2,I).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ at(s1,s2,L) ^ at(e1,e2,I) => aia(seg1,seg2,FinishesInverse).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,FinishesInverse) => at(s1,s2,L).
+hasStart(seg1,s1) ^ hasEnd(seg1,e1) ^ hasStart(seg2,s2) ^ hasEnd(seg2,e2) ^ aia(seg1,seg2,FinishesInverse) => at(e1,e2,I).

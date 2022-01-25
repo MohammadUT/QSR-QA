@@ -1,0 +1,99 @@
+rel={I,S,N,E,W,SE,SW,NE,NW}
+at(point,point,rel!)
+
+at(a,a,I).
+at(a,b,I) => at(b,a,I).
+at(a,b,N) => at(b,a,S).
+at(b,a,S) => at(a,b,N).
+at(a,b,W) => at(b,a,E).
+at(b,a,E) => at(a,b,W).
+at(a,b,NW) => at(b,a,SE).
+at(b,a,SE) => at(a,b,NW).
+at(a,b,NE) => at(b,a,SW).
+at(b,a,SW) => at(a,b,NE).
+
+at(a,b,I) ^ at(b,c,I) => at(a,c,I).
+at(a,b,I) ^ at(b,c,S) => at(a,c,S).
+at(a,b,I) ^ at(b,c,N) => at(a,c,N).
+at(a,b,I) ^ at(b,c,E) => at(a,c,E).
+at(a,b,I) ^ at(b,c,W) => at(a,c,W).
+at(a,b,I) ^ at(b,c,SE) => at(a,c,SE).
+at(a,b,I) ^ at(b,c,NW) => at(a,c,NW).
+at(a,b,I) ^ at(b,c,SW) => at(a,c,SW).
+at(a,b,I) ^ at(b,c,NE) => at(a,c,NE).
+
+at(a,b,S) ^ at(b,c,I) => at(a,c,S).
+at(a,b,S) ^ at(b,c,S) => at(a,c,S).
+at(a,b,S) ^ at(b,c,N) => at(a,c,N) v at(a,c,I) v at(a,c,S).
+at(a,b,S) ^ at(b,c,E) => at(a,c,SE).
+at(a,b,S) ^ at(b,c,W) => at(a,c,SW).
+at(a,b,S) ^ at(b,c,SE) => at(a,c,SE).
+at(a,b,S) ^ at(b,c,NW) => at(a,c,NW) v at(a,c,W) v at(a,c,SW).
+at(a,b,S) ^ at(b,c,SW) => at(a,c,SW).
+at(a,b,S) ^ at(b,c,NE) => at(a,c,NE) v at(a,c,E) v at(a,c,SE).
+
+at(a,b,N) ^ at(b,c,I) => at(a,c,N).
+at(a,b,N) ^ at(b,c,S) => at(a,c,N) v at(a,c,I) v at(a,c,S).
+at(a,b,N) ^ at(b,c,N) => at(a,c,N).
+at(a,b,N) ^ at(b,c,E) => at(a,c,NE).
+at(a,b,N) ^ at(b,c,W) => at(a,c,NW).
+at(a,b,N) ^ at(b,c,SE) => at(a,c,NE) v at(a,c,E) v at(a,c,SE).
+at(a,b,N) ^ at(b,c,NW) => at(a,c,NW).
+at(a,b,N) ^ at(b,c,SW) => at(a,c,NW) v at(a,c,W) v at(a,c,SW).
+at(a,b,N) ^ at(b,c,NE) => at(a,c,NE).
+
+at(a,b,E) ^ at(b,c,I) => at(a,c,E).
+at(a,b,E) ^ at(b,c,S) => at(a,c,SE).
+at(a,b,E) ^ at(b,c,N) => at(a,c,NE).
+at(a,b,E) ^ at(b,c,E) => at(a,c,E).
+at(a,b,E) ^ at(b,c,W) => at(a,c,W) v at(a,c,E) v at(a,c,I).
+at(a,b,E) ^ at(b,c,SE) => at(a,c,SE).
+at(a,b,E) ^ at(b,c,NW) => at(a,c,NW) v at(a,c,NE) v at(a,c,N).
+at(a,b,E) ^ at(b,c,SW) => at(a,c,SW) v at(a,c,S) v at(a,c,SE).
+at(a,b,E) ^ at(b,c,NE) => at(a,c,NE).
+
+at(a,b,W) ^ at(b,c,I) => at(a,c,W).
+at(a,b,W) ^ at(b,c,S) => at(a,c,SW).
+at(a,b,W) ^ at(b,c,N) => at(a,c,NW).
+at(a,b,W) ^ at(b,c,E) => at(a,c,W) v at(a,c,E) v at(a,c,I).
+at(a,b,W) ^ at(b,c,W) => at(a,c,W).
+at(a,b,W) ^ at(b,c,SE) => at(a,c,SE) v at(a,c,S) v at(a,c,SW).
+at(a,b,W) ^ at(b,c,NW) => at(a,c,NW).
+at(a,b,W) ^ at(b,c,SW) => at(a,c,SW).
+at(a,b,W) ^ at(b,c,NE) => at(a,c,NE) v at(a,c,NW) v at(a,c,N).
+
+at(a,b,SE) ^ at(b,c,I) => at(a,c,SE).
+at(a,b,SE) ^ at(b,c,S) => at(a,c,SE).
+at(a,b,SE) ^ at(b,c,N) => at(a,c,SE) v at(a,c,E) v at(a,c,NE).
+at(a,b,SE) ^ at(b,c,E) => at(a,c,SE).
+at(a,b,SE) ^ at(b,c,W) => at(a,c,S) v at(a,c,SE) v at(a,c,SW).
+at(a,b,SE) ^ at(b,c,SE) => at(a,c,SE).
+at(a,b,SE) ^ at(b,c,SW) => at(a,c,SW) v at(a,c,SE) v at(a,c,S).
+at(a,b,SE) ^ at(b,c,NE) => at(a,c,NE) v at(a,c,SE) v at(a,c,E).
+
+at(a,b,NW) ^ at(b,c,I) => at(a,c,NW).
+at(a,b,NW) ^ at(b,c,S) => at(a,c,SW) v at(a,c,NW) v at(a,c,W).
+at(a,b,NW) ^ at(b,c,N) => at(a,c,NW).
+at(a,b,NW) ^ at(b,c,E) => at(a,c,NW) v at(a,c,NE) v at(a,c,N).
+at(a,b,NW) ^ at(b,c,W) => at(a,c,NW).
+at(a,b,NW) ^ at(b,c,NW) => at(a,c,NW).
+at(a,b,NW) ^ at(b,c,SW) => at(a,c,SW) v at(a,c,NW) v at(a,c,W).
+at(a,b,NW) ^ at(b,c,NE) => at(a,c,NE) v at(a,c,NW) v at(a,c,N).
+
+at(a,b,SW) ^ at(b,c,I) => at(a,c,SW).
+at(a,b,SW) ^ at(b,c,S) => at(a,c,SW).
+at(a,b,SW) ^ at(b,c,N) => at(a,c,NW) v at(a,c,SW) v at(a,c,W).
+at(a,b,SW) ^ at(b,c,E) => at(a,c,SW) v at(a,c,SE) v at(a,c,S).
+at(a,b,SW) ^ at(b,c,W) => at(a,c,SW).
+at(a,b,SW) ^ at(b,c,SE) => at(a,c,SE) v at(a,c,S) v at(a,c,SW).
+at(a,b,SW) ^ at(b,c,NW) => at(a,c,NW) v at(a,c,SW) v at(a,c,W).
+at(a,b,SW) ^ at(b,c,SW) => at(a,c,SW).
+
+at(a,b,NE) ^ at(b,c,I) => at(a,c,NE).
+at(a,b,NE) ^ at(b,c,S) => at(a,c,SE) v at(a,c,NE) v at(a,c,E).
+at(a,b,NE) ^ at(b,c,N) => at(a,c,NE).
+at(a,b,NE) ^ at(b,c,E) => at(a,c,NE).
+at(a,b,NE) ^ at(b,c,W) => at(a,c,NW) v at(a,c,NE) v at(a,c,N).
+at(a,b,NE) ^ at(b,c,SE) => at(a,c,SE) v at(a,c,NE) v at(a,c,E).
+at(a,b,NE) ^ at(b,c,NW) => at(a,c,NW) v at(a,c,NE) v at(a,c,N).
+at(a,b,NE) ^ at(b,c,NE) => at(a,c,NE).

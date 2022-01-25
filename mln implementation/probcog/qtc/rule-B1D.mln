@@ -1,0 +1,147 @@
+rel={MMM, MMZ, MMP, MZP, MPM, MPZ, MPP, ZMM, ZZZ, ZPM, PMM, PMZ, PMP, PZP, PPM, PPZ, PPP}
+drel={MM,MZ,MP,ZM,ZZ,ZP,PM,PZ,PP}
+srel={M,Z,P}
+qtc(object, object, rel!)
+distance(object, object, drel!)
+speed(object, object, srel!)
+
+speed(k,l,M) => speed(l,k,P).
+speed(k,l,Z) => speed(l,k,Z).
+speed(k,l,P) => speed(l,k,M).
+speed(k,l,r) ^ speed(l,m,r) => speed(k,m,r).
+speed(k,l,r) ^ speed(l,m,Z) => speed(k,m,r).
+
+distance(k,l,MM) => distance(l,k,MM).
+distance(k,l,MZ) => distance(l,k,ZM).
+distance(k,l,MP) => distance(l,k,PM).
+distance(k,l,ZM) => distance(l,k,MZ).
+distance(k,l,ZZ) => distance(l,k,ZZ).
+distance(k,l,ZP) => distance(l,k,PZ).
+distance(k,l,PM) => distance(l,k,MP).
+distance(k,l,PZ) => distance(l,k,ZP).
+distance(k,l,PP) => distance(l,k,PP).
+
+distance(k,l,MM) ^ distance(l,m,MM) => distance(k,m,MP) v distance(k,m,PM).
+distance(k,l,MM) ^ distance(l,m,MZ) => distance(k,m,MZ) v distance(k,m,PZ).
+distance(k,l,MM) ^ distance(l,m,MP) => distance(k,m,MM) v distance(k,m,PP).
+distance(k,l,MM) ^ distance(l,m,PM) => distance(k,m,MM).
+distance(k,l,MM) ^ distance(l,m,PZ) => distance(k,m,MZ).
+distance(k,l,MM) ^ distance(l,m,PP) => distance(k,m,MP).
+
+distance(k,l,MZ) ^ distance(l,m,ZM) => distance(k,m,PM) v distance(k,m,MP) v distance(k,m,MM).
+distance(k,l,MZ) ^ distance(l,m,ZZ) => distance(k,m,MZ) v distance(k,m,PZ).
+distance(k,l,MZ) ^ distance(l,m,ZP) => distance(k,m,PP) v distance(k,m,MM) v distance(k,m,MP).
+
+distance(k,l,MP) ^ distance(l,m,MM) => distance(k,m,MM).
+distance(k,l,MP) ^ distance(l,m,MZ) => distance(k,m,MZ).
+distance(k,l,MP) ^ distance(l,m,MP) => distance(k,m,MP).
+distance(k,l,MP) ^ distance(l,m,PM) => distance(k,m,MP) v distance(k,m,PM).
+distance(k,l,MP) ^ distance(l,m,PZ) => distance(k,m,MZ) v distance(k,m,PZ).
+distance(k,l,MP) ^ distance(l,m,PP) => distance(k,m,MM) v distance(k,m,PP).
+
+distance(k,l,ZM) ^ distance(l,m,MM) => distance(k,m,ZM) v distance(k,m,ZP).
+distance(k,l,ZM) ^ distance(l,m,MZ) => distance(k,m,ZZ).
+distance(k,l,ZM) ^ distance(l,m,MP) => distance(k,m,ZP) v distance(k,m,ZM).
+distance(k,l,ZM) ^ distance(l,m,PM) => distance(k,m,ZM).
+distance(k,l,ZM) ^ distance(l,m,PZ) => distance(k,m,ZZ).
+distance(k,l,ZM) ^ distance(l,m,PP) => distance(k,m,ZP).
+
+distance(k,l,ZZ) ^ distance(l,m,ZM) => distance(k,m,ZM) v distance(k,m,ZP).
+distance(k,l,ZZ) ^ distance(l,m,ZZ) => distance(k,m,ZZ).
+distance(k,l,ZZ) ^ distance(l,m,ZP) => distance(k,m,ZM) v distance(k,m,ZP).
+
+distance(k,l,ZP) ^ distance(l,m,MM) => distance(k,m,ZM).
+distance(k,l,ZP) ^ distance(l,m,MZ) => distance(k,m,ZZ).
+distance(k,l,ZP) ^ distance(l,m,MP) => distance(k,m,ZP).
+distance(k,l,ZP) ^ distance(l,m,PM) => distance(k,m,ZM) v distance(k,m,ZP).
+distance(k,l,ZP) ^ distance(l,m,PZ) => distance(k,m,ZZ).
+distance(k,l,ZP) ^ distance(l,m,PP) => distance(k,m,ZP) v distance(k,m,ZM).
+
+distance(k,l,PM) ^ distance(l,m,MM) => distance(k,m,MM) v distance(k,m,PP).
+distance(k,l,PM) ^ distance(l,m,MZ) => distance(k,m,MZ) v distance(k,m,PZ).
+distance(k,l,PM) ^ distance(l,m,MP) => distance(k,m,MP) v distance(k,m,PM).
+distance(k,l,PM) ^ distance(l,m,PM) => distance(k,m,PM).
+distance(k,l,PM) ^ distance(l,m,PZ) => distance(k,m,PZ).
+distance(k,l,PM) ^ distance(l,m,PP) => distance(k,m,PP).
+
+distance(k,l,PZ) ^ distance(l,m,ZM) => distance(k,m,PM) v distance(k,m,PP) v distance(k,m,MM).
+distance(k,l,PZ) ^ distance(l,m,ZZ) => distance(k,m,MZ) v distance(k,m,PZ).
+distance(k,l,PZ) ^ distance(l,m,ZP) => distance(k,m,PP) v distance(k,m,PM) v distance(k,m,MP).
+
+distance(k,l,PP) ^ distance(l,m,MM) => distance(k,m,PM).
+distance(k,l,PP) ^ distance(l,m,MZ) => distance(k,m,PZ).
+distance(k,l,PP) ^ distance(l,m,MP) => distance(k,m,PP).
+distance(k,l,PP) ^ distance(l,m,PM) => distance(k,m,MM) v distance(k,m,PP).
+distance(k,l,PP) ^ distance(l,m,PZ) => distance(k,m,MZ) v distance(k,m,PZ).
+distance(k,l,PP) ^ distance(l,m,PP) => distance(k,m,MP) v distance(k,m,PM).
+
+qtc(k,l,MMM) => distance(k,l,MM).
+qtc(k,l,MMM) => speed(k,l,M).
+distance(k,l,MM) ^ speed(k,l,M) => qtc(k,l,MMM).
+
+qtc(k,l,MMZ) => distance(k,l,MM).
+qtc(k,l,MMZ) => speed(k,l,Z).
+distance(k,l,MM) ^ speed(k,l,Z) => qtc(k,l,MMZ).
+
+qtc(k,l,MMP) => distance(k,l,MM).
+qtc(k,l,MMP) => speed(k,l,P).
+distance(k,l,MM) ^ speed(k,l,P) => qtc(k,l,MMP).
+
+qtc(k,l,MZP) => distance(k,l,MZ).
+qtc(k,l,MZP) => speed(k,l,P).
+distance(k,l,MZ) ^ speed(k,l,P) => qtc(k,l,MZP).
+
+qtc(k,l,MPM) => distance(k,l,MP).
+qtc(k,l,MPM) => speed(k,l,M).
+distance(k,l,MP) ^ speed(k,l,M) => qtc(k,l,MPM).
+
+qtc(k,l,MPZ) => distance(k,l,MP).
+qtc(k,l,MPZ) => speed(k,l,Z).
+distance(k,l,MP) ^ speed(k,l,Z) => qtc(k,l,MPZ).
+
+qtc(k,l,MPP) => distance(k,l,MP).
+qtc(k,l,MPP) => speed(k,l,P).
+distance(k,l,MP) ^ speed(k,l,P) => qtc(k,l,MPP).
+
+qtc(k,l,ZMM) => distance(k,l,ZM).
+qtc(k,l,ZMM) => speed(k,l,M).
+distance(k,l,ZM) ^ speed(k,l,M) => qtc(k,l,ZMM).
+
+qtc(k,l,ZZZ) => distance(k,l,ZZ).
+qtc(k,l,ZZZ) => speed(k,l,Z).
+distance(k,l,ZZ) ^ speed(k,l,Z) => qtc(k,l,ZZZ).
+
+qtc(k,l,ZPM) => distance(k,l,ZP).
+qtc(k,l,ZPM) => speed(k,l,M).
+distance(k,l,ZP) ^ speed(k,l,M) => qtc(k,l,ZPM).
+
+qtc(k,l,PMM) => distance(k,l,PM).
+qtc(k,l,PMM) => speed(k,l,M).
+distance(k,l,PM) ^ speed(k,l,M) => qtc(k,l,PMM).
+
+qtc(k,l,PMZ) => distance(k,l,PM).
+qtc(k,l,PMZ) => speed(k,l,Z).
+distance(k,l,PM) ^ speed(k,l,Z) => qtc(k,l,PMZ).
+
+qtc(k,l,PMP) => distance(k,l,PM).
+qtc(k,l,PMP) => speed(k,l,P).
+distance(k,l,PM) ^ speed(k,l,P) => qtc(k,l,PMP).
+
+qtc(k,l,PZP) => distance(k,l,PZ).
+qtc(k,l,PZP) => speed(k,l,P).
+distance(k,l,PZ) ^ speed(k,l,P) => qtc(k,l,PZP).
+
+qtc(k,l,PPM) => distance(k,l,PP).
+qtc(k,l,PPM) => speed(k,l,M).
+distance(k,l,PP) ^ speed(k,l,M) => qtc(k,l,PPM).
+
+qtc(k,l,PPZ) => distance(k,l,PP).
+qtc(k,l,PPZ) => speed(k,l,Z).
+distance(k,l,PP) ^ speed(k,l,Z) => qtc(k,l,PPZ).
+
+qtc(k,l,PPP) => distance(k,l,PP).
+qtc(k,l,PPP) => speed(k,l,P).
+distance(k,l,PP) ^ speed(k,l,P) => qtc(k,l,PPP).
+
+
+
