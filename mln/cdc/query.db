@@ -1,0 +1,9 @@
+at(A,C,N)
+at(A,B,W)
+at(C,D,W)
+at(B,D,N)
+at(S1,C,NE)
+at(S1,B,SW)
+0.9 at(S1,A,SE)
+
+

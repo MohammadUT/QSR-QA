@@ -1,0 +1,44 @@
+relation = {DC, EC, PO, TPP, NTPP, EQ, TPPI, NTPPI}
+at(region, relation!, region)
+
+
+at(a, EQ, a).
+// Converse
+at(a, DC, b) => at(b, DC, a).
+at(a, EC, b) => at(b, EC, a).
+at(a, PO, b) => at(b, PO, a).
+at(a, TPP, b) => at(b, TPPI, a).
+at(a, NTPP, b) => at(b, NTPPI, a).
+at(a, EQ, b) => at(b,EQ,a).
+at(a, TPPI, b) => at(b, TPP, a).
+at(a, NTPPI, b) => at(b, NTPP, a).
+
+//Composition
+at(a,EQ,b) ^ at(b,r,c) => at(a,r,c).
+
+at(a, DC, b) ^ at(b,EC, c) => at(a, DC, c) v at(a,EC,c) v at(a,PO,c) v at(a,TPP,c) v at(a,NTPP,c).
+at(a, DC, b) ^ at(b,PO,c) => at(a, DC, c) v at(a,EC,c) v at(a,PO,c) v at(a,TPP,c) v at(a,NTPP,c).
+at(a, DC, b) ^ at(b,TPP,c) => at(a, DC, c) v at(a,EC,c) v at(a,PO,c) v at(a,TPP,c) v at(a,NTPP,c).
+at(a, DC, b) ^ at(b, NTPP, c) => at(a, DC, c) v at(a,EC,c) v at(a,PO,c) v at(a,TPP,c) v at(a,NTPP,c).
+at(a, DC, b) ^ at(b, TPPI, c) => at(a, DC, c).
+at(a, DC, b) ^ at(b, NTPPI, c) => at(a, DC, c).
+
+at(a, EC, b) ^ at(b, EC, c) => at(a,DC,c) v at(a,EC,c) v at(a,PO,c) v at(a,TPP,c) v at(a,EQ,c) v at(a,TPPI,c).
+at(a, EC, b) ^ at(b, PO, c) => at(a, DC, c) v at(a,EC,c) v at(a,PO,c) v at(a,TPP,c) v at(a,NTPP,c).
+at(a, EC, b) ^ at(b, TPP, c) => at(a, EC, c) v at(a, TPP, c) v at(a, NTPP, c).
+at(a, EC, b) ^ at(b, NTPP, c) => at(a, PO, c) v at(a, TPP, c) v at(a, NTPP, c).
+at(a, EC, b) ^ at(b, TPPI, c) => at(a, DC, c) v at(a, EC, c).
+at(a, EC, b) ^ at(b, NTPPI, c) => at(a, DC, c).
+
+at(a, PO, b) ^ at(b, TPP, c) => at(a, PO, c) v at(a, TPP, c) v at(a, NTPP, c).
+at(a, PO, b) ^ at(b, NTPP, c) => at(a, PO, c) v at(a, TPP, c) v at(a, NTPP, c).
+at(a, PO, b) ^ at(b, TPPI, c) => at(a, DC, c) v at(a,EC,c) v at(a,PO,c) v at(a,TPP,c) v at(a,NTPP,c).
+at(a, PO, b) ^ at(b, NTPPI, c) => at(a, DC, c) v at(a,EC,c) v at(a,PO,c) v at(a,TPP,c) v at(a,NTPP,c).
+
+at(a, TPP, b) ^ at(b, TPP,c) => at(a, TPP, c) v at(a, NTPP, c).
+at(a, TPP, b) ^ at(b, NTPP, c) => at(a, NTPP, c).
+at(a, TPP, b) ^ at(b, TPPI, c) => at(a,DC,c) v at(a,EC,c) v at(a,PO,c) v at(a,TPP,c) v at(a,EQ,c) v at(a,TPPI,c).
+at(a, TPP, b) ^ at(b, NTPPI, c) => at(a,DC,c) v at(a,EC,c) v at(a,PO,c) v at(a,TPP,c) v at(a,EQ,c) v at(a,TPPI,c) v at(a,NTPPI,c).
+
+at(a, NTPP, b) ^ at(b, NTPP, c) => at(a, NTPP, c).
+at(a, NTPP, b) ^ at(b, TPPI, c) => at(a,DC,c) v at(a,EC,c) v at(a,PO,c) v at(a,TPP,c) v at(a,EQ,c) v at(a,TPPI,c) v at(a,NTPP,c).
