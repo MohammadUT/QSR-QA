@@ -1,6 +1,4 @@
 
-# QSR-QA
-
 The code and data are related to the paper ''*Probabilistic Qualitative Spatial Reasoning with Applications to GeoQA*''
 
 # Perquisites
