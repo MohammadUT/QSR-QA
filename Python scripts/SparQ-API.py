@@ -1,3 +1,4 @@
+## Feeding questions as triple to conventional reasoner, SparQ
 
 import subprocess
 import pickle
@@ -52,15 +53,9 @@ for index, i in enumerate(sparq_outputs_split):
             else:
                 rel +=j+' '
 
-#print(generatedRelations)
 
 with open('/home/mohammad/Desktop/SparQ-master/GeneraatedRelations.pickle', 'wb') as f:
     pickle.dump([generatedRelations], f)
 	 
 	 
-#a ='/home/mohammad/Desktop/SparQ-master/sparq constraint-reasoning cardir algebraic-closure "((B ne A) (C ne A) (D se A) (E  se A) (C se B) (D se B) (E sw B) (D sw C) (E sw D) (P sw B) (P sw C) (P nw D) (P ne E))"'
-
-#stream = os.popen(a)
-#output = stream.read()
-#print(output)
 
