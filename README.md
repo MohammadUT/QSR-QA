@@ -1,13 +1,29 @@
+
 # QSR-QA
-Python scripts and the required inputs for running Qualitative Spatial Reasoning Question Answering (QSR-QA) System.
+
+The code and data are related to the paper ''*Probabilistic Qualitative Spatial Reasoning with Applications to GeoQA*''
+
+# Perquisites
+
+Two spatial reasoning tools, SparQ for conventional reasoning and Probcog for probabilistic reasoning need to be installed:
+
+- Probcog ( Follow the their github repo in https://github.com/opcode81/ProbCog)
+- SparQ (Follow their manual in https://www.uni-bamberg.de/fileadmin/sme/SparQ/SparQ-Manual.pdf)
 
 
-The script has four main steps:
-1. Query generation for three types of questions.
-2. Extracting place semantics based on AllenNLP and DeepPavlov libraries in a triple format of (Place 1, relation, Place 2).
-3. Preparing the required inputs for SparQ and ProbCog reasoning (You have to firstly set up these reasonsers in your local machine and then use their corresponding implemented python API to generate answers for each question.)
-4. Answer extraction on top of the results obtained in the previous step for all question types.
-5. Evaluation of the answers.
+# Materials
 
-Feel free to reach out for any inquries about how this system works.
-mkb6988@gmail.com 
+This includes codes, data and evidence sets folders for two experiments:
+
+- Code: This folder includes questionGenerator.py and answerExtraction.py for generating synthetic questions and post-processing of inferences from Probcog and SparQ reasoners. Also we have written Python API for Probcog (ProbCog-API.py) and SparQ reasoners (SparQ-API.py).
+- Data: This folder shows the chosen 500 place name in Experiment 1 and UK footprints in Experiment 2. 
+- Evidence: This hows all spatial configurations defined for two experiments. 
+
+# File Description
+
+Each experiment follows the following steps for generating answers for input questions:
+
+1. Query generation: Generating three types of questions (Finding relation (FR), Finding Features (FF), Yes/no (YN))
+2. Answer extraction: Feeding the generated questions in the previous step into the Probcog and SparQ Python APIs ( You have to firstly install these reasoners in your local machine). The output of this step is the generated answers from the reasoners for each question.
+3. Evaluation of the answers: Different evaluations of answers are generated from this steps (e.g., accuracy, magnitude of difference in probability values distribution, probability distribution boxplots, etc) 
+
